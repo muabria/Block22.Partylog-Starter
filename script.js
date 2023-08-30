@@ -66,6 +66,7 @@ const renderSinglePartyById = async (id) => {
     // create new HTML element to display party details
     const partyDetailsElement = document.createElement('div');
     partyDetailsElement.classList.add('party-details');
+    
     partyDetailsElement.innerHTML = `
             <h2>${party.title}</h2>
             <p>${party.event}</p>
@@ -124,18 +125,21 @@ const renderParties = async (parties) => {
       const detailsButton = partyElement.querySelector('.details-button');
       detailsButton.addEventListener('click', async (event) => {
         // your code here
+        renderSinglePartyById(party.id);
       });
 
       // delete party
       const deleteButton = partyElement.querySelector('.delete-button');
       deleteButton.addEventListener('click', async (event) => {
         // your code here
+        deleteParty(party.id);
       });
     });
   } catch (error) {
     console.error(error);
   }
 };
+
 
 // init function
 const init = async () => {

@@ -3,3 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #faebc9;
+}
+
+#party-container {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 2% 10%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+
+}
