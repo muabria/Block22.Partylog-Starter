@@ -93,7 +93,7 @@ const renderSinglePartyById = async (id) => {
 
             <button class="close-button">Close</button>
         `;
-    partyContainer.appendChild(partyDetailsElement);
+    detailView.appendChild(partyDetailsElement);
 
     // add event listener to close button
     const closeButton = partyDetailsElement.querySelector('.close-button');

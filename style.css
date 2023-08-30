@@ -19,3 +19,23 @@ body{
    
 
 }
+
+h1,h2{
+    text-align: center;
+    padding:20px;
+    color: #432904;
+    
+
+}
+
+p{
+    padding: 10px;
+}
+
+.party-card{
+    flex-basis: 200px;
+    flex-grow: 1;
+    background-color: #eaf1bb;
+    margin: 10px;
+    padding: 20px;
+}
